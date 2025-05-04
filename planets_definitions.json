@@ -1,0 +1,15 @@
+{
+    "Earth": {
+      "r_mean": 6371000,
+      "r_equator": 6378137,
+      "r_pole": 6356752,
+      "mean_crust_density": 2.670
+    },
+    "Mars": {
+      "r_mean": 3389500,
+      "r_equator": 3396200,
+      "r_pole": 3376200,
+      "mean_crust_density": 3.933
+    }
+  }
+  
