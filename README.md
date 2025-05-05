@@ -1,6 +1,6 @@
 # Gravity Correction Calculator
 
-This script provides a quick and interactive way to calculate gravity corrections based on geospatial data stored in a Shapefile.
+This script provides a quick way to calculate gravity corrections based on geospatial data stored in a Shapefile.
 
 ## 📄 Requirements for Input Shapefile
 
@@ -30,6 +30,7 @@ The current version supports the following gravity-related calculations:
 
 > **Note:** Support for **topographic anomaly** will be added in the future.
 
----
 
-Let me know if you'd like badges, code snippets, installation instructions, or a visual diagram included too!
+## Known Issues
+
+- **Automatic field detection cannot detect latitude field**
