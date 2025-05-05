@@ -1,6 +1,7 @@
 # Graviton - A Gravity Correction Calculator
 
 This script provides a quick way to calculate gravity corrections based on geospatial data stored in a Shapefile.
+Feel free to test it out using the attached dummy shapefile.
 
 ## 📄 Requirements for Input Shapefile
 
