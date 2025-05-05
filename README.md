@@ -22,11 +22,11 @@ The Shapefile must include the following fields:
 
 The current version supports the following gravity-related calculations:
 
-- 🌍 **Normal gravity** based on latitude
-- 🏔 **Free-air correction**
-- 🌫 **Atmospheric correction**
-- 🪨 **Bouguer plate correction**
-- 📉 **Final gravity anomaly**
+- **Normal gravity** based on latitude
+- **Free-air correction**
+- **Atmospheric correction**
+- **Bouguer plate correction**
+- **Final gravity anomaly**
 
 > **Note:** Support for **topographic anomaly** will be added in the future.
 
