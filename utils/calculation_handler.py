@@ -23,18 +23,6 @@ class Measurement_point(Point):
         self.measurement = measurement
         self.corrected_measurement = corrected_measurement
 
-"""def load_correction_config(config_path="config.cfg"):
-    config = configparser.ConfigParser()
-    config.read(config_path)
-
-    methods = {
-
-        "NORMAL_GRAVITY": int(config["CALCULATIONS"].get("NORMAL_GRAVITY", 0)),
-        "FREE_AIR": int(config["CALCULATIONS"].get("FREE_AIR", 0)),
-        "ATMOSPHERIC": int(config["CALCULATIONS"].get("ATMOSPHERIC", 0)),
-        "BOUGUER": int(config["CALCULATIONS"].get("BOUGUER", 0)),
-    }
-    return methods"""
 
 def load_planet(planet_name, filepath="planets_definitions.json"):
     with open(filepath, "r") as f:

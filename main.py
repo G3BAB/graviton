@@ -1,5 +1,7 @@
 # TO DO:
 # 1. Ask the user if lat / lon in degrees/radians (or another)
+# 2. Fix the automatic attribute match for latitude
+# 3. Complete the config-based setup
 
 import sys
 from utils.setup_handler import interactive_setup, config_setup, load_from_shapefile

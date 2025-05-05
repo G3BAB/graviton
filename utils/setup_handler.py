@@ -1,3 +1,5 @@
+# If you want to look at nice looking code, please select a different module
+
 import configparser
 import tkinter as tk
 from tkinter import filedialog
@@ -6,7 +8,6 @@ import os
 import re
 import geopandas as gpd
 from utils.calculation_handler import Measurement_point, Planet, load_planet
-
 
 # Keeps config variables, their values an their labels
 METHODS = {
@@ -161,6 +162,7 @@ def load_from_shapefile(filepath):
     for attr, keywords in attribute_keywords.items():
         assigned_fields[attr] = resolve_attribute_column(attr, columns, keywords)
 
+    # Showcase a preview of the attribute pairing
     preview_count = min(3, len(gdf))
     print("\nPreview of attribute assignment and sample data:\n")
 
@@ -173,7 +175,6 @@ def load_from_shapefile(filepath):
         for i in range(preview_rows)
     ]
 
-    # Calculate column width
     col_widths = [max(len(str(val)) for val in [attr, col] + [row[i] for row in sample_data]) + 2 for i, (attr, col) in enumerate(zip(attributes, columns))]
     label_col_width = max(len("ASSIGNED COLUMN:"), len(str(preview_rows))) + 2
 
@@ -189,7 +190,6 @@ def load_from_shapefile(filepath):
     for idx, row in enumerate(sample_data, start=1):
         print(format_row("DATA " + str(idx) + ".", row))
 
-    # Ask user to confirm the assignments
     while True:
         confirm = input("\nPress ENTER to confirm column assignments, or type 'Q' to quit: ").strip()
         if confirm.lower() == "q":
